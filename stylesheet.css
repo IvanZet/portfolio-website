@@ -1,0 +1,113 @@
+/*Common*/
+html {
+	font-family: Corbel, Calibri, sans-serif;
+}
+
+body {
+	margin-left: 50px;
+}
+
+nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+}
+
+nav p {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 10px;
+	color: black;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+footer {
+	position: relative;
+}
+
+/*index.html*/
+main {
+	width: 600px;
+}
+
+.hello {
+	font-family: Inconsolata;
+}
+
+.banner {
+	width: 75%;
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.banner h1 {
+	margin-top: 100px;
+	font-size: 3em;
+}
+
+.banner h3 {
+	font-size: 1.5em;
+}
+
+/*Cotacts*/
+.contacts {
+	position: relative;
+	top: 70px;
+	width: 75%;
+	height: 180px;
+	text-align: left;
+}
+
+/*resume.html*/
+.cv_picture {
+	width: 10em;
+}
+
+.resume {
+	position: relative;
+	top: 50px;
+	display: grid;
+	grid-template-areas: 	"header header cv_picture"
+												"profile profile profile"
+												"edu_head edu_head edu_head"
+												"edu_dat edu_cont edu_cont";
+	grid-template-columns: 110px 310px 200px;
+	grid-template-rows: 200px 204px 50px 300px;
+}
+
+.header {
+	grid-area: header;
+}
+
+.cv_picture {
+	grid-area: cv_picture;
+	justify-self: end;
+}
+
+.profile {
+	grid-area: profile;
+	text-align: justify;
+}
+
+.edu_head {
+	grid-area: edu_head;
+}
+
+.edu_dat {
+	grid-area: edu_dat;
+}
+
+.edu_cont {
+	grid-area: edu_cont;
+}
